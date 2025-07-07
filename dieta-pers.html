@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dieta e Nutrição - Calculadora de Dieta</title>
+    <link rel="stylesheet" href="css/dieta-pers.css"> <!-- Link para o CSS específico -->
+    <script defer src="js/dieta-pers.js"></script>
+    <link rel="icon" href="img/favicon.ico" type="image/png"> <!-- Link para o JS específico -->
+</head>
+
+<body>
+    <!-- Cabeçalho -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="calculadora-tmb.html">Calculadora de TMB</a></li>
+                <li><a href="dieta-flexivel.html">Dieta Flexivel</a></li>
+                <li><a href="dieta-pers.html">Dieta Personalizada</a></li>
+                <li><a href="clico-carbo.html">Ciclo de Carboidratos</a></li>
+                <li><a href="contato.html">Feedback</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Seção da Dieta e Nutrição -->
+    <section id="dieta-nume">
+        <h1>Calculadora de Dieta e Nutrição</h1>
+
+        <form id="dietaForm">
+            <div class="campo">
+                <label for="carboidratos">Carboidratos (% das calorias):</label>
+                <input type="number" id="carboidratos" placeholder="Ex: 50%" required>
+            </div>
+
+            <div class="campo">
+                <label for="gorduras">Gorduras (% das calorias):</label>
+                <input type="number" id="gorduras" placeholder="Ex: 25%" required>
+            </div>
+
+            <div class="campo">
+                <label for="proteinas">Proteínas (% das calorias):</label>
+                <input type="number" id="proteinas" placeholder="Ex: 25%" required>
+            </div>
+
+            <div class="campo">
+                <label for="refeicoes">Quantas refeições por dia?</label>
+                <input type="number" id="refeicoes" placeholder="Digite o número de refeições" required>
+            </div>
+
+            <button type="submit">Calcular Distribuição dos Macronutrientes</button>
+        </form>
+
+        <div id="resultado-dieta" class="hidden">
+            <h3>Resultado da Dieta</h3>
+            <p id="caloriasResultado"></p>
+            <p id="carboidratosResultado"></p>
+            <p id="gordurasResultado"></p>
+            <p id="proteinasResultado"></p>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>&copy; 2025 Dieta e Nutrição - Todos os direitos reservados.</p>
+    </footer>
+</body>
+
+</html>

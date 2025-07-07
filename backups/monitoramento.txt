@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monitoramento de Atividades Físicas</title>
+    <link rel="stylesheet" href="css/monitoramento.css"> <!-- Link para o CSS específico -->
+    <script defer src="js/monitoramento.js"></script> <!-- Link para o JS específico -->
+</head>
+
+<body>
+    <!-- Cabeçalho -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="monitoramento.html">Monitoramento de Atividade Física</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Seção de Monitoramento -->
+    <section id="monitoramento">
+        <h1>Monitoramento de Atividades Físicas</h1>
+
+        <form id="atividadeForm">
+            <div class="campo">
+                <label for="distancia">Quantos km você andou hoje?</label>
+                <input type="number" id="distancia" placeholder="Distância (em km)" required>
+            </div>
+
+            <div class="campo">
+                <label for="hora_inicio">De que horas a que horas?</label>
+                <input type="time" id="hora_inicio" required>
+                <span>até</span>
+                <input type="time" id="hora_fim" required>
+            </div>
+
+            <button type="submit">Calcular Gasto Calórico</button>
+        </form>
+
+        <div id="resultados" class="hidden">
+            <h2>Resultados</h2>
+            <p id="distanciaResultado"></p>
+            <p id="horaResultado"></p>
+            <p id="caloriasResultado"></p>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>&copy; 2025 Monitoramento de Atividades Físicas - Todos os direitos reservados.</p>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de TMB e NDC</title>
+    <link rel="stylesheet" href="css/calculadora-tmb.css"> <!-- Link para o CSS específico -->
+    <script defer src="js/calculadora-tmb.js"></script> 
+    <link rel="icon" href="img/favicon.ico" type="image/png"><!-- Link para o JS específico -->
+</head>
+
+<body>
+    <!-- Cabeçalho -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="calculadora-tmb.html">Calculadora de TMB</a></li>
+                <li><a href="dieta-flexivel.html">Dieta Flexivel</a></li>
+                <li><a href="dieta-pers.html">Dieta Personalizada</a></li>
+                <li><a href="clico-carbo.html">Ciclo de Carboidratos</a></li>
+                <li><a href="contato.html">Feedback</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Seção da Calculadora de TMB -->
+    <section id="calculadora-tmb">
+        <h1>Calculadora de TMB e NDC</h1>
+
+        <!-- 1ª Etapa: Cálculo da TMB -->
+        <div class="etapa">
+            <h2>1º ETAPA - Como determinar a taxa de metabolismo basal (TMB)</h2>
+            <p>É o total de calorias gastas para manter as funções vitais, como os batimentos cardíacos, a pressão arterial e a temperatura corporal:</p>
+
+            <form id="tmbForm">
+                <div class="campo">
+                    <label for="peso">Peso (kg):</label>
+                    <input type="number" id="peso" placeholder="Digite seu peso em kg" required>
+                </div>
+
+                <div class="campo">
+                    <label for="altura">Altura (cm):</label>
+                    <input type="number" id="altura" placeholder="Digite sua altura em cm" required>
+                </div>
+
+                <div class="campo">
+                    <label for="idade">Idade (anos):</label>
+                    <input type="number" id="idade" placeholder="Digite sua idade" required>
+                </div>
+
+                <div class="campo">
+                    <label for="sexo">Sexo:</label>
+                    <select id="sexo" required>
+                        <option value="" disabled selected>Escolha seu sexo</option>
+                        <option value="masculino">Masculino</option>
+                        <option value="feminino">Feminino</option>
+                    </select>
+                </div>
+
+                <button type="submit">Calcular TMB</button>
+            </form>
+
+            <div id="resultado-tmb" class="hidden">
+                <h3>Resultado TMB</h3>
+                <p id="tmbResultado"></p>
+            </div>
+        </div>
+
+        <!-- 2ª Etapa: Necessidade Diária de Calorias (NDC) -->
+        <div class="etapa">
+            <h2>2º ETAPA - Como determinar a necessidade diária de calorias (NDC)</h2>
+            <p>Considerando a sua rotina de exercícios físicos:</p>
+
+            <form id="ndcForm">
+                <div class="campo">
+                    <label for="atividade">Atividade física:</label>
+                    <select id="atividade" required>
+                        <option value="" disabled selected>Escolha sua atividade física</option>
+                        <option value="nenhuma">Sedentário</option>
+                        <option value="moderada">Atividade física moderada</option>
+                        <option value="intensa">Atividade física intensa</option>
+                    </select>
+                </div>
+
+                <button type="submit">Calcular NDC</button>
+            </form>
+
+            <div id="resultado-ndc" class="hidden">
+                <h3>Resultado NDC</h3>
+                <p id="ndcResultado"></p>
+            </div>
+        </div>
+
+      <!-- 3ª Etapa: Como perder peso -->
+<div class="etapa">
+    <h2>3º ETAPA - Como montar a minha dieta?</h2>
+    <p>Some macros, defina calorias, encaixe alimentos que você gosta e mantenha o equilíbrio nutricional..</p>
+    <p>NDC - de 500 a 600 calorias = Quantidade máxima de calorias que pode ser ingerida diariamente.</p>     
+    </div>
+    
+    <!-- Botão que redireciona para a página ciclo-carbo.html -->
+        <a href="dieta-flexivel.html">
+            <button type="button">Dieta Flexível</button>
+        </a>
+
+
+        <!-- 4ª Etapa: Como manter o novo peso -->
+        <div class="etapa">
+            <h2>4º Como usar o Ciclo de Carboidratos?</h2>
+            <p>Alterne dias com alto, moderado e baixo consumo de carboidrato.</p>
+            <p>NDC = Quantidade máxima de calorias que pode ser ingerida diariamente.</p>
+        </div>
+
+        <!-- Botão que redireciona para a página ciclo-carbo.html -->
+        <a href="clico-carbo.html">
+            <button type="button">Ciclo de Carboidratos</button>
+        </a>
+        
+    </section>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>&copy; 2025 Calculadora de TMB e NDC - Todos os direitos reservados.</p>
+    </footer>
+</body>
+
+</html>

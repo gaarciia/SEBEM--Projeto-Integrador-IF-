@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ciclo de Carboidratos</title>
+    <link rel="stylesheet" href="css/clico-carbo.css">
+    <script defer src="js/clico-carbo.js"></script>
+</head>
+
+<body>
+    <!-- Cabeçalho -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="calculadora-tmb.html">Calculadora de TMB</a></li>
+                <li><a href="dieta-flexivel.html">Dieta Flexível</a></li>
+                <li><a href="dieta-nume.html">Dieta e Nutrição</a></li>
+                <li><a href="ciclo-carboidratos.html">Ciclo de Carboidratos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Seção Introdução -->
+    <section id="intro">
+        <h1>Ciclo de Carboidratos</h1>
+        <p>Calcule o ciclo de carboidratos com base nas suas necessidades calóricas, ajustando para diferentes protocolos de consumo.</p>
+    </section>
+
+    
+
+    <!-- Seção Ciclo de Carboidratos -->
+    <section id="ciclo">
+        <h2>Insira os Dados de Macronutrientes</h2>
+        <form id="ciclo-form">
+            <label for="carboidratos">Carboidratos (g):</label>
+            <input type="number" id="carboidratos" name="carboidratos" required>
+
+            <label for="gorduras">Gorduras (g):</label>
+            <input type="number" id="gorduras" name="gorduras" required>
+
+            <label for="proteinas">Proteínas (g):</label>
+            <input type="number" id="proteinas" name="proteinas" required>
+
+            <label for="kcal-total">Kcal Médio Total:</label>
+            <input type="text" id="kcal-total" disabled>
+
+            <label for="protocolo">Selecione um Protocolo:</label><br>
+            <input type="radio" id="protocolo-2" name="protocolo" value="2 low 1 high">
+            <label for="protocolo-2">2 Low 1 High</label><br>
+            <input type="radio" id="protocolo-3" name="protocolo" value="3 low 1 high">
+            <label for="protocolo-3">3 Low 1 High</label><br>
+            <input type="radio" id="protocolo-4" name="protocolo" value="4 low 1 high">
+            <label for="protocolo-4">4 Low 1 High</label><br>
+
+            <button type="button" onclick="calcularCiclo()">Calcular</button>
+        </form>
+
+        <!-- Resultado dos Macronutrientes com base no protocolo -->
+        <div id="resultado" class="hidden">
+            <h3>Resultado do Ciclo de Carboidratos</h3>
+            <p id="resultado-kcal-total"></p>
+            <p id="resultado-protocolo"></p>
+
+            <!-- Seção para os dias Low (baixo carboidrato) -->
+            <div id="low-result" class="hidden">
+                <h3>Macronutrientes para os Dias de Carbo Baixo (Low)</h3>
+                <div class="result-item">
+                    <span>Carboidratos dos dias low (baixo):</span>
+                    <input type="text" id="low-carboidratos" disabled>
+                </div>
+                <div class="result-item">
+                    <span>Gorduras dos dias low (baixo):</span>
+                    <input type="text" id="low-gorduras" disabled>
+                </div>
+                <div class="result-item">
+                    <span>Proteínas dos dias low (baixo):</span>
+                    <input type="text" id="low-proteinas" disabled>
+                </div>
+                <div class="result-item">
+                    <span>Kcal dos dias low (baixo):</span>
+                    <input type="text" id="low-kcal" disabled>
+                </div>
+            </div>
+
+            <!-- Seção para os dias High (alto carboidrato) -->
+            <div id="high-result" class="hidden">
+                <h3>Macronutrientes para os Dias de Carbo Alto (High)</h3>
+                <div class="result-item">
+                    <span>Carboidratos dos dias high (alto):</span>
+                    <input type="text" id="high-carboidratos" disabled>
+                </div>
+                <div class="result-item">
+                    <span>Gorduras dos dias high (alto):</span>
+                    <input type="text" id="high-gorduras" disabled>
+                </div>
+                <div class="result-item">
+                    <span>Proteínas dos dias high (alto):</span>
+                    <input type="text" id="high-proteinas" disabled>
+                </div>
+                <div class="result-item">
+                    <span>Kcal dos dias high (alto):</span>
+                    <input type="text" id="high-kcal" disabled>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>&copy; 2025 Ciclo de Carboidratos. Todos os direitos reservados.</p>
+    </footer>
+</body>
+
+</html>

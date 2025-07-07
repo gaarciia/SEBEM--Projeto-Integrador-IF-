@@ -1,0 +1,284 @@
+/* Estilo Global */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #45a049;
+    padding: 20px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 25px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #f4f4f4;
+}
+
+/* Seção Introdução */
+#intro {
+    background-color: #fff;
+    padding: 40px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    border-radius: 12px;
+    transition: transform 0.3s ease;
+}
+
+#intro h1 {
+    font-size: 2.5em;
+    color: #2C6E49;
+}
+
+#intro p {
+    font-size: 1.2em;
+    margin-top: 20px;
+}
+
+.cta button {
+    background-color: #45a049;
+    color: white;
+    padding: 12px 20px;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.cta button:hover {
+    background-color: #45a049;
+    transform: scale(1.05);
+}
+
+/* Seção de Cálculo */
+#calculo {
+    padding: 40px;
+    background-color: #fff;
+    margin: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    transition: transform 0.3s ease;
+}
+
+#calculo h2 {
+    color: #2C6E49;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+form label {
+    font-size: 1.1em;
+    margin: 10px 0;
+}
+
+input[type="number"], select {
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    width: 100%;
+    font-size: 1em;
+    margin-bottom: 20px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input[type="number"]:focus, select:focus {
+    border-color: #45a049;
+    box-shadow: 0 0 8px rgba(76, 175, 80, 0.5);
+}
+
+button {
+    background-color: #45a049;
+    color: white;
+    padding: 12px 20px;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+    background-color: #45a049;
+    transform: scale(1.05);
+}
+
+#resultado {
+    margin-top: 20px;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ddd;
+    font-family: 'Arial', sans-serif;
+}
+
+#resultado h3 {
+    font-size: 1.5em;
+    color: #2c3e50;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+#resultado p {
+    font-size: 1.1em;
+    color: #7f8c8d;
+    margin-bottom: 10px;
+}
+
+#resultado label {
+    font-size: 1.1em;
+    color: #34495e;
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+    margin-top: 15px;
+}
+
+#resultado input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    font-size: 1.1em;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f7f7f7;
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+#resultado input:disabled {
+    background-color: #eaeaea;
+}
+
+#resultado .result-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+#resultado .result-item span {
+    font-size: 1.2em;
+    color: #2c3e50;
+    font-weight: bold;
+}
+
+#resultado .result-item p {
+    font-size: 1.2em;
+    color: #2c3e50;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: #f0f0f0;
+    width: 200px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#resultado .result-item p {
+    font-weight: bold;
+    font-size: 1.1em;
+    color: #34495e;
+    margin-bottom: 10px;
+    padding: 10px;
+    text-align: center;
+    background-color: #eaf2f8;
+    border: 2px solid #7f8c8d;
+    border-radius: 6px;
+}
+
+#resultado .result-item input {
+    font-size: 1.2em;
+    padding: 10px;
+    border-radius: 6px;
+    background-color: #eaf2f8;
+    border: 2px solid #7f8c8d;
+    width: 100%;
+    text-align: center;
+    color: #2c3e50;
+    font-weight: bold;
+    margin-top: 8px;
+}
+
+
+h3 {
+    color: #2c3e50;
+    font-size: 1.3em;
+    margin-bottom: 10px;
+}
+
+
+
+/* Rodapé */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #45a049; /* Cor de fundo verde */
+    color: white; /* Cor do texto branca */
+    font-size: 0.9em;
+    margin-top: 50px;
+}
+
+/* Para garantir que a cor do texto no rodapé seja sempre branca */
+footer p {
+    color: white;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    #intro, #calculo, #refeicoes-calculo {
+        margin: 10px;
+        padding: 25px;
+    }
+
+    form label {
+        font-size: 1em;
+    }
+
+    h2, h3 {
+        font-size: 1.5em;
+    }
+
+    input[type="number"], select, button {
+        width: 100%;
+    }
+
+    .cta button {
+        width: 100%;
+    }
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 0px; /* Reduz o espaçamento entre letras */
+    transition: color 0.3s ease;
+}
+

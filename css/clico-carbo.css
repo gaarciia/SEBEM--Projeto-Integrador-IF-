@@ -1,0 +1,313 @@
+/* Estilo geral para a página */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilo do cabeçalho */
+header {
+    background-color: #45a049;
+    padding: 20px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 25px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #f4f4f4;
+}
+
+/* Estilo do rodapé */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #45a049; /* Cor de fundo verde */
+    color: white; /* Cor do texto branca */
+    font-size: 0.9em;
+    margin-top: 50px;
+}
+
+/* Para garantir que a cor do texto no rodapé seja sempre branca */
+footer p {
+    color: white;
+}
+
+/* Estilo do título da página */
+#intro h1 {
+    font-size: 2.5em; /* Tamanho maior para o título */
+    color: #2c3e50; /* Cor do texto */
+    font-weight: bold; /* Negrito */
+    text-transform: uppercase; /* Texto em maiúsculas */
+    letter-spacing: 2px; /* Espaçamento entre as letras */
+    text-align: center; /* Alinhar ao centro */
+    margin-bottom: 15px; /* Espaço abaixo do título */
+}
+
+/* Estilo da descrição do título */
+#intro p {
+    font-size: 1.2em; /* Aumenta o tamanho do texto */
+    color: #34495e; /* Cor do texto */
+    line-height: 1.6; /* Maior espaçamento entre as linhas */
+    font-weight: 500; /* Peso médio */
+    text-align: center; /* Alinhar ao centro */
+    margin-bottom: 30px; /* Espaço abaixo do texto */
+}
+
+/* Efeito de sombra no título */
+#intro h1 {
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); /* Sombra para destacar */
+}
+
+/* Estilo do título das seções */
+section h2 {
+    font-size: 2em;
+    color: #45a049; /* Cor verde para as seções */
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 40px; /* Espaço acima */
+    margin-bottom: 20px; /* Espaço abaixo */
+}
+
+/* Estilo para as descrições de seções */
+section p {
+    font-size: 1.1em;
+    color: #7f8c8d; /* Cor mais suave para a descrição */
+    line-height: 1.5;
+    text-align: center;
+    margin-bottom: 40px; /* Espaço abaixo da descrição */
+}
+
+
+/* Seção Ciclo de Carboidratos */
+#ciclo {
+    background-color: white;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-size: 1em;
+}
+
+/* Formulário para inserir dados */
+#ciclo-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#ciclo-form label {
+    font-size: 1.1em;
+    color: #34495e;
+    font-weight: bold;
+}
+
+#ciclo-form input[type="number"],
+#ciclo-form input[type="text"],
+#ciclo-form input[type="radio"],
+#ciclo-form button {
+    padding: 12px;
+    font-size: 1.1em;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    background-color: #f9f9f9;
+    color: #2c3e50;
+    margin-top: 8px;
+}
+
+#ciclo-form input[type="radio"] {
+    margin-right: 10px;
+}
+
+/* Botão de Calcular */
+#ciclo-form button {
+    background-color: #45a049;
+    color: white;
+    font-size: 1.2em;
+    padding: 12px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 10px;
+}
+
+#ciclo-form button:hover {
+    background-color: #45a049;
+}
+
+/* Estilo geral para a seção de resultados */
+#resultado {
+    background-color: #eaf7e9;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: 'Arial', sans-serif;
+}
+
+/* Estilo do título de resultado */
+#resultado h3 {
+    font-size: 1.5em;
+    color: #2c3e50;
+    margin-bottom: 15px;
+}
+
+/* Estilo para cada item de resultado */
+.result-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+    font-size: 1.2em;
+    color: #34495e;
+}
+
+/* Estilo dos rótulos de resultado */
+.result-item span {
+    font-weight: bold;
+}
+
+/* Estilo dos campos de entrada no resultado */
+.result-item input {
+    font-size: 1.1em;
+    padding: 12px;
+    border-radius: 8px;
+    border: 2px solid #ddd;
+    background-color: #f9f9f9;
+    color: #2c3e50;
+    width: 150px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo dos campos de entrada quando desabilitados */
+.result-item input:disabled {
+    background-color: #eaeaea;
+    color: #7f8c8d;
+}
+
+/* Estilo do fundo para cada bloco de macronutrientes (Low e High) */
+#low-result, #high-result {
+    background-color: #ffffff;
+    padding: 15px;
+    border-radius: 10px;
+    margin-top: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Título das seções Low e High */
+#low-result h3, #high-result h3 {
+    font-size: 1.3em;
+    color: #2c3e50;
+    margin-bottom: 12px;
+}
+
+/* Estilo dos labels nas seções Low e High */
+#low-result label, #high-result label {
+    font-size: 1.1em;
+    color: #34495e;
+    font-weight: bold;
+    margin-bottom: 8px;
+    display: block;
+}
+
+/* Alinhamento de botões */
+#ciclo-form button {
+    background-color: #45a049;
+    color: white;
+    font-size: 1.2em;
+    padding: 12px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#ciclo-form button:hover {
+    background-color: #45a049;
+}
+
+/* Estilizando a parte de protocolo */
+#protocolo-selecao {
+    font-family: 'Arial', sans-serif;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/* Ocultando os inputs de rádio */
+input[type="radio"] {
+    display: none; /* Esconde o input de rádio original */
+}
+
+/* Estilizando os labels para parecerem botões */
+input[type="radio"] + label {
+    display: inline-block; /* Faz com que fiquem um ao lado do outro */
+    background-color: #f1f1f1;
+    border: 2px solid #ccc;
+    padding: 15px 30px;
+    border-radius: 30px;
+    margin-right: 20px; /* Espaçamento entre os botões */
+    cursor: pointer;
+    font-size: 18px;
+    transition: all 0.3s ease;
+    text-align: center;
+    width: 150px;
+}
+
+/* Quando o input de rádio for selecionado */
+input[type="radio"]:checked + label {
+    background-color: #45a049; /* Verde quando selecionado */
+    color: white;
+    border-color: #45a049;
+}
+
+/* Efeito de hover nos botões */
+input[type="radio"]:not(:checked) + label:hover {
+    background-color: #e2e2e2;
+}
+
+/* Descrição do protocolo */
+label {
+    font-weight: bold;
+    font-size: 18px;
+    transition: all 0.3s ease;
+}
+
+/* Quando o mouse passa sobre o botão, muda de cor */
+input[type="radio"]:checked + label {
+    background-color: #45a049;
+    color: white;
+    border-color: #45a049;
+    box-shadow: 0 0 10px rgba(0, 128, 0, 0.4);
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 0px; /* Reduz o espaçamento entre letras */
+    transition: color 0.3s ease;
+}
