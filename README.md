@@ -40,7 +40,7 @@ Este projeto está sendo desenvolvido com:
 
 ## 📸 Capturas de Tela
 
-> (![Captura de tela 2025-07-07 143953](https://github.com/user-attachments/assets/dacbf6fe-fabd-4461-972b-52b51f949d34)
+> ![Captura de tela 2025-07-07 143953](https://github.com/user-attachments/assets/dacbf6fe-fabd-4461-972b-52b51f949d34)
 
 
 ---
