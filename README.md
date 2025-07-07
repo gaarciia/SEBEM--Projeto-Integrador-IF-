@@ -40,7 +40,8 @@ Este projeto está sendo desenvolvido com:
 
 ## 📸 Capturas de Tela
 
-> (Adicione imagens aqui quando quiser mostrar sua interface)
+> (![Captura de tela 2025-07-07 143953](https://github.com/user-attachments/assets/dacbf6fe-fabd-4461-972b-52b51f949d34)
+
 
 ---
 
